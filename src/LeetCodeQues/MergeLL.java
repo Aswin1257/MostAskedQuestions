@@ -1,5 +1,6 @@
 package LeetCodeQues;
 
+import java.util.HashMap;
 
 public class MergeLL {
 	Node headNode;
@@ -55,5 +56,7 @@ public class MergeLL {
 	public static void main(String[] args) {
 		MergeLL firsLl = new MergeLL();
 		MergeLL secondLl = new MergeLL();
+
+
 	}
 }
