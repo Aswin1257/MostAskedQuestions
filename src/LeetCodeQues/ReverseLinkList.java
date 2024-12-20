@@ -1,5 +1,6 @@
 package LeetCodeQues;
 
+
 public class ReverseLinkList {
 	Node headNode;
 	class Node{
@@ -34,4 +35,15 @@ public class ReverseLinkList {
 		rootNode.next = null;
 		return rootNode;
 	}
+	
+	//Second method
+	 public Node reverseLL(Node rootNode) {
+		 if(rootNode.next == null) {
+			 headNode = rootNode;
+			 return headNode;
+		 }
+		 Node lastNode = reverseLL(rootNode);
+		 lastNode.next= rootNode;
+		 return rootNode;
+	 }
 }
